@@ -3,27 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
     <title>Alura Challenge</title>
 </head>
 <body>
     <header>
-        <img src="imagen/Logo.svg" alt="Logo">
+        <img class="logo" src="imagen/Logo.svg" alt="Logo">
     </header>
     <main>
-        <section>
-            <form action="">
-                <textarea name="" id="mensaje" cols="70" rows="10" class="input-padron">Ingrese el texto aquí</textarea>
-
-                <input type="button" value="Encriptar">
-                <input type="button" value="Desencriptar">
-            </form>
+        <section class="caja1">
+            <div class="contenedorTexto">
+                <form action="">
+                    <textarea placeholder="Ingresar el texto aquí" class="cajatexto"></textarea>
+                    <p>Solo letras minúsculas y sin acento</p>
+                </form>
+                <input type="button"  class="btnEncriptar" value="Encriptar">
+                <input type="button" class="btnDesencriptar" value="Desencriptar">
+            </div>
         </section>
-        <section>
+        <section class="caja2">
+            <div class="contenedorMuneco">
+                <img src="imagen/Muñeco.svg" alt="Muñeco">
+            </div>
+            <div class="contenedorParrafo">
+                <h3>Ningún mensaje fue <br> encontrado </h3>
+                <p>Ingresa el texto que desees encriptar o <br> desencriptar</p>
+            </div> 
+            <div>
+                <input type="button" class="btnCopiar" value="Copiar">
+            </div class="contenedorCopiar">
+            <p class="textoResultado"></p>
+            <div>
 
+            </div>
         </section>
     </main>
     <footer>
-
+        <p class="pie">Designed by Claudia Amengual @2024</p>
     </footer>
     <script src="app.js"></script>
 </body>
