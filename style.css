@@ -23,7 +23,7 @@ main{
     display: flex;
     justify-content: space-between;
 }
-.contenedorTexto{
+.containerTexto{
     position: absolute;
     left: 200px;
     top: 100px;
@@ -47,7 +47,47 @@ main{
     color: #0A3871;
 }
 
+.texto{
+    position: absolute;
+    top: 750px;
+    left: 550px;
+    display: flex;
+    color: #495057;
+}
+.containerBtn{
+    position: absolute;
+    top: 760px;
+    height: 80px;
+    padding-left: 25%;
+    padding-top:15px;
+}
 
+.btnEncriptar{
+    width: 328px;
+    height: 67px;
+    border-radius: 15px;
+    background-color: #0A3871;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    border: none;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.btnDesencriptar{
+    width: 328px;
+    height: 67px;
+    border-radius: 15px;
+    background-color: #D8DFE8;
+    color: #0A3871;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    border: 1px solid #0A3871;
+    cursor: pointer;
+}
 
 
 
