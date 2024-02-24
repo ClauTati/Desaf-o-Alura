@@ -25,7 +25,7 @@ main{
 }
 .containerTexto{
     position: absolute;
-    left: 200px;
+    left: 100px;
     top: 100px;
     padding-left: 100px;
     width: 1080px;
@@ -34,7 +34,7 @@ main{
 
 .cajatexto{
     width: 80%;
-    height: 100%;
+    height: 30%;
     border: none;
     background-color: #f4f4fc;
     cursor: pointer;
@@ -49,16 +49,16 @@ main{
 
 .texto{
     position: absolute;
-    top: 750px;
-    left: 550px;
+    top: 550px;
+    left: 230px;
     display: flex;
     color: #495057;
 }
 .containerBtn{
     position: absolute;
-    top: 760px;
+    top: 560px;
     height: 80px;
-    padding-left: 25%;
+    padding-left: 15%;
     padding-top:15px;
 }
 
@@ -87,6 +87,76 @@ main{
     font-family: 'Inter', sans-serif;
     border: 1px solid #0A3871;
     cursor: pointer;
+}
+
+.caja2{
+    display: block;
+    position: relative;
+    width: 400px;
+    height: 660px;
+    right: 80px;
+    padding-right: 15px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-sizing: border-box;
+   /* 
+   
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.50);*/
+}
+
+.containerMuneco{
+    position: absolute;
+    left: 25px;
+    top: 40px;
+    box-sizing: border-box;
+    padding-top: 5px;
+}
+
+.containerParrafo{
+    position: absolute;
+    box-sizing: border-box;
+    top: 470px;
+    left: 40px;
+}
+
+.containerParrafo h3{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    color: #343A40;
+}
+
+.contenedor-parrafo p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    font-size: 10px;
+    text-align: center;
+    color: #495057;
+    padding-top: 20px;
+}
+.contenedorCopiar{
+    display: flex;
+    position: absolute;
+    bottom: 400px;
+    top: 700px;
+    background-color: aqua;
+    padding-left: 40px;
+}
+.btnCopiar{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: #ffffff;
+    color: #0A3871;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    border: 1px solid #0A3871;
+    cursor: pointer;
+    position: relative;
+    top: 570px;
+    right: -40px;
 }
 
 
