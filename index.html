@@ -3,41 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="style.css">
-   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
-    <title>Alura Challenge</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    
+    <title>Alura Challenge Encriptado</title>
 </head>
 <body>
     <header>
-        <img class="logo" src="imagen/Logo.svg" alt="Logo">
+        <div class="containerLogo">
+            <img class="logo" src="imagen/Logo.svg" alt="Logo">
+        </div>
     </header>
     <main>
         <section class="caja1">
             <div class="containerTexto">
-                <textarea placeholder="Ingresar el texto aquí" class="cajatexto"></textarea>
-            </div>      
-            <div class="texto">
-                <p>&#9432; Solo letras minúsculas y sin acento</p>
-            </div>
-            <div class="containerBtn"> 
-                <input type="button"  class="btnEncriptar" value="Encriptar">
-                <input type="button" class="btnDesencriptar" value="Desencriptar">
+                <textarea class="cajatexto" cols="40" rows="10" placeholder="Ingresar el texto aquí" ></textarea>
+                <div class="texto">
+                    <p class="left-info">
+                        <img class="signo" src="imagen/!.svg" alt="Signo">
+                        Solo letras minúsculas y sin acento
+                    </p>
+                    <div class="btn-left">
+                        <button  class="btnEncriptar" onclick="btnEncriptar()">Encriptar</button>
+                        <button class="btnDesencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                    </div>
+                </div>
             </div>
         </section>
-        <section class="caja2">
-            <div class="containerMuneco">
-                <img src="imagen/Muñeco.svg" alt="Muñeco">
-            </div>
-            <div class="containerParrafo">
-                <h3>Ningún mensaje fue <br> encontrado </h3>
-                <p>Ingresa el texto que desees encriptar o <br> desencriptar</p>
-            </div> 
-            <div>
-                <input type="button" class="btnCopiar" value="Copiar">
-            </div class="contenedorCopiar">
-            <p class="textoResultado"></p>
-            <div>
-
+        <section>
+            <div class="caja2">
+                <img class="muneco" src="imagen/Muñeco.svg" alt="Muñeco">
+                <textarea class="textoFinal" cols="20" rows="10" placeholder="Ningún mensaje fue encontrado"></textarea>
+                <p class="mensaje">Ingresa el texto que desees encriptar o <br> desencriptar</p>
+                <button class="btnCopiar" onclick="btnCopiar()">Copiar</button>
             </div>
         </section>
     </main>
